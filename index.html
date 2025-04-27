@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/animations.css" />
 
+    <link rel="icon" type="image/png" href="/images/favicon.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png" />
   </head>
   <body class="page">
     <header class="header container">
@@ -281,7 +284,7 @@
           <div class="card__teg">
             &lt;experience&gt;
           </div>
-          <img class="card__image" 
+          <img class="card__image card__image-experience" 
               src="./images/bus-image.png" 
               alt="Фургончик с едой, который стоит на улице ночью" 
               loading="lazy"
@@ -307,25 +310,23 @@
           </button>
         </div>  
       </section>
-
-      <button class="save-button animated-button" type="button">
-        <svg class="save-button-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28">
-          <use href="./svg/floppy.svg#floppy"></use>
+      <button class="save-button animated-button" type="button" onclick="window.saveDialog.showModal()">
+        <svg class="save-button-icon" xmlns="http://www.w3.org/2000/svg" width="29" height="28">
+          <use href="./svg/icons.svg#floppy-icon"></use>
         </svg>
         <span class="save-button-text animated-button-text" >Сохранить на память</span>
       </button>
-
       <dialog class="modal" id="saveDialog">
         <div class="modal__form">
           <div class="modal__content">
-            <svg class="modal__content-icon" xmlns="http://www.w3.org/2000/svg" width="39" height="39">
-              <use href="./svg/floppy.svg#floppy"></use>
+            <svg class="modal__content-icon" xmlns="http://www.w3.org/2000/svg" width="40" height="39">
+              <use href="./svg/icons.svg#floppy-icon"></use>
             </svg>
             <p class="modal__content-text">Вставьте
               дискету, чтобы продолжить</p>
           </div>
           <button class="modal__button animated-button" type="button" onclick="window.saveDialog.close()">
-            <span class="modal__button-text animated-button-text">OK</span>
+            <span class="modal__button-text animated-button-text">ок</span>
           </button>
         </div>
       </dialog>
