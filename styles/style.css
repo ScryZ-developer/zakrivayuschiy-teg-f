@@ -352,7 +352,7 @@
 .modal {
   inline-size: 100%;
   max-inline-size: 341px;
-  padding: 32px;
+  padding: 30px 40px;
   border: var(--border);
   margin: auto;
   background-color: var(--default-color);
